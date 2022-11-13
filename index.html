@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trishan Bank | KYC</title>
+</head>
+
+<body>
+
+    <!--Header Section-->
+    <header align="center">
+        <br> <br>
+        <img width="150px" height="150px" src="/images/logo.png" alt="Trishan Bank Logo" title="Trishan Bank Logo">
+
+        <hr>
+        <h1>Know Your Customer (KYC FORM)</h1>
+        <hr>
+    </header>
+
+    <!--Main Section-->
+    <main>
+        <br><br>
+
+        <!--Form Begins-->
+        <fieldset>
+            <legend>KYC FORM</legend>
+            <form action="mailto:mailtotrishan@gmail.com" method="post" enctype="text/plain">
+                <br>
+
+                <p> <strong> Account Details</strong></p>
+                <label for="acc_num">*Account No:</label>
+                <input required type="number" name="Account No" id="acc_num" placeholder="Eg: 1234567">
+                &nbsp; &nbsp;
+                <label for="acc_type">*Account Type:</label>
+                <select name="Account Type" id="acc_type">
+                    <option selected>Account Type</option>
+                    <option value="Saving">Saving</option>
+                    <option value="Fixed Deposit">Fixed Deposit</option>
+                </select>
+                <br><br>
+
+
+                <p> <strong> Identification Details</strong></p>
+                <p> <strong>Name</strong></p>
+                <label for="eng_name">*In English :</label>
+                <input required type="text" name="English Name" id="eng_name" placeholder="Eg: Trishan Wagle">
+                &nbsp; &nbsp;
+
+                <label for="nep_name">In Nepali : </label>
+                <input type="text" name="Nepali Name" id="nep_name" placeholder="Eg: तृशन वाग्ले">
+                <br><br>
+
+
+                <p> <strong>Gender:</strong></p>
+                <label for="gender_m">Male</label>
+                <input type="radio" name="Gender" id="gender_m" value="Male">
+                <label for="gender_f">Female</label>
+                <input type="radio" name="Gender" id="gender_f" value="Female">
+                <label for="gender_o">Others</label>
+                <input type="radio" name="Gender" id="gender_o" value="Others">
+                <br><br>
+
+
+                <p> <strong>*DOB:</strong></p>
+                <label for="dob">Date of Birth:</label>
+                <input required type="date" name="Date of Birth" id="dob">
+                <br><br>
+
+
+                <p> <strong>Address Details:</strong></p>
+                <label for="p_address">Permanent Address: </label>
+                <input type="text" name="Permanent Address" id="p_address" placeholder="Eg: Nuwakot, Nepal">
+                &nbsp;
+                <label for="c_address">Current Address: </label>
+                <input type="text" name="Current Address" id="c_address" placeholder="Eg: Samakhushi, Kathmandu">
+                <br><br>
+
+
+                <p> <strong>Citizenship Details</strong></p>
+                <label for="id_num" required>*Citizenship ID No:</label>
+                <input type="number" name="Citizenship Number" id="id_num" placeholder="Eg: 00900">
+                &nbsp; &nbsp;
+                <label for="issued_date">Issued Date:</label>
+                <input type="date" name="Citizenship Issued Date" id="issued_date">
+                &nbsp; &nbsp;
+                <label for="issued_district">Issued District: </label>
+                <input type="text" name="Issued District" id="issued_district" placeholder="Eg: Kathmandu">
+                <br><br>
+
+
+                <p> <strong>Required Photos</strong></p>
+                <label for="profile_pic">Select your profile photo</label>
+                <input type="file" name="Profile Pic" id="profile_pic">
+                <br><br>
+                <label for="id_pic">Upload your citizenship photo</label>
+                <input type="file" name="Citizenship Photo" id="id_pic">
+                <br><br>
+
+                <p> <strong>*Terms and Conditions</strong></p>
+                <input type="checkbox" name="Terms" id="terms" value="Accepted" required>
+                <label for="terms">I hereby declare that all the information provided are true and correct. In case of
+                    information not available with me or not applicable to me, the same has been specifically mentioned
+                    in the respective section of
+                    this form. </label>
+                <br><br> <br>
+
+                <input type="submit" value="Submit Details">
+                <br><br>
+            </form>
+        </fieldset>
+    </main>
+    <br>
+
+    <footer align="center">
+        <p>Trishan Bank Limited, KYC FORM</p>
+    </footer>
+
+    <br>
+
+</body>
+
+</html>
